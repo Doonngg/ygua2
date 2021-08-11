@@ -4,57 +4,35 @@
 	text-decoration: none;
 	list-style: none;
 }
-body{
-	background-color: #f6f6f6;
+:root {
+	--GreenColor: #0ED17F;
+	--BlackColor: #18191F;
+	--BlueColor: #2A94F4;
 }
 /*滚轮轨道相关*/
 body::-webkit-scrollbar {
 	width: 0;
 }
-
-.gBody{
-	width: 600px;
-	min-width: 340px;
-	margin: 0 auto;
-	position: relative;
-	background-color: #0AC376;
+body{
+	width: 100%;
 }
 .firstPage{
-	width: 600px;
+	max-width: 420px;
 	margin: 0 auto;
-	background-color: #F6F6F6;
-	position: absolute;
-	float: left;
-}
-.heaer{
-	height: 240px;
-	background-color: #18191f;
-	border-radius: 0 0 6px 6px;
-	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
-}
-.heaer img{
-	width: 250px;
-	margin-top: 55px;
-	margin-left: 16px;
 }
 .gSelf{
-	max-width: 536px;
+	margin: 8px;
 	height: 56px;
 	padding: 16px;
-	border-radius: 6px 6px 0 0;
-	background: linear-gradient(91.38deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.06) 100%);
-	margin: 0 auto;
-	margin-top: -88px;
+	border-radius: 4px;
+	background: var(--BlackColor);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	cursor: pointer;
 	transition: background-color .3s;
 }
-.gSelf:hover{
-	background-color: rgba(255,255,255,0.05);
-}
+
 .gSelf b{
 	color: #FFFFFF;
 	font-size: 24px;
@@ -100,9 +78,10 @@ body::-webkit-scrollbar {
 	height: 36px;
 }
 .gList{
+	margin: 8px;
 	padding: 16px;
 	background-color: #FFFFFF;
-	border-radius: 6px;
+	border-radius: 4px;
 	margin-top: 10px;
 	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
 	transition: background-color .3s;
@@ -186,7 +165,9 @@ body::-webkit-scrollbar {
 	text-align: center;
 	line-height: 32px;
 	color: #FFFFFF;
-	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	border: solid 1px rgba(0,0,0,0.05);
+	box-shadow: 0 0 2px rgba(0,0,0,0.2);
 	transition: background-color .3s;
 }
 .gSuggestSend:hover{
@@ -194,8 +175,8 @@ body::-webkit-scrollbar {
 }
 footer{
 	padding: 16px;
-	margin-top: 10px;
-	border-radius: 6px 6px 0 0;
+	margin: 8px;
+	border-radius: 4px;
 	background-color: #18191F;
 	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
 	display: flex;
@@ -203,41 +184,4 @@ footer{
 	justify-content: space-between;
 	font-size: 13px;
 	color: rgba(255,255,255,0.8);
-}
-.secondPage{
-	width: 600px;
-	height: 1115px;
-	background-color: #FFFFFF;
-	position: absolute;
-	float: left;
-	left: 0;
-	z-index: -1;
-}
-.backBtn{
-	width: 32px;
-	height: 32px;
-	position: absolute;
-	top: 50%;
-	bottom: 50%;
-	margin: 0 auto;
-	margin-left: 12px;
-	cursor: pointer;
-}
-@media screen and (max-width: 600px) {
-    .gBody{
-		width: 100%;
-    	margin: 0 auto;
-    	position: relative;
-    	background-color: #0AC376;
-    }
-    .firstPage{
-		width: 100%;
-    	margin: 0 auto;
-    	background-color: #F6F6F6;
-    	position: absolute;
-    	float: left;
-    }
-	.secondPage{
-		display: none;
-	}
 }
