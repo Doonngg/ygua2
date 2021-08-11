@@ -211,7 +211,7 @@ body,html{
 	transition: background-color .3s;
 }
 .btn:active{
-	transform: scale(0.9);
+	transform: scale(0.95);
 	transition: all .1s;
 }
 footer{
