@@ -63,15 +63,14 @@ body{
 	width: 48px;
 	height: 48px;
 	border-radius: 4px;
-	margin-left: 4px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-	transition: background-color .3s;
 }
-.gSelfRight li:hover{
-	background-color: #000000;
+.gSelfRight li:active{
+	transform: scale(0.9);
+	transition: all .1s;
 }
 .gSelfRight img{
 	width: 36px;
@@ -86,7 +85,7 @@ body{
 	transition: background-color .3s;
 	cursor: pointer;
 }
-.gList:hover{
+.gList:active{
 	background-color: #EDEDED;
 }
 .gTitle{
@@ -99,13 +98,31 @@ body{
 	font-size: 20px;
 	color: #18191F;
 }
-.gTitle img{
-	width: 20px;
-	height: 20px;
+.leftOpen {
+	border: solid;
+	border-width: 0 1px 1px 0;
+	display: inline-block;
+	padding: 3px;
+	border-color: rgba(0, 0, 0, .5);
+	transform: rotate(-45deg);
+	margin-right: 8px;
+	transition: transform .3s;
+}
+.gDownload{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 16px;
+}
+.gDownload i{
+	font-size: 13px;
+	color: rgba(0,0,0,0.5);
 }
 .gUpdate{
-	padding: 12px;
+	padding: 8px;
 	font-size: 13px;
+	line-height: 24px;
 	color: #707070;
 	background-color: #F6F6F6;
 	margin-top: 16px;
@@ -114,17 +131,19 @@ body{
 .historyMsg{
 	margin-top: 16px;
 	font-size: 13px;
-	color: rgba(0,0,0,0.7);
+	color: rgba(0,0,0,0.5);
 }
 .historyMsg li{
-	margin-bottom: 16px;
+	margin-top: 8px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	position: relative;
 }
 .historyMsg p{
-	margin-left: 8px;
+	margin-left: 16px;
+	height: 20px;
+	overflow: hidden;
 }
 .historyMsg p::after,.historyMsg p::before{
 	content: "";
@@ -159,21 +178,25 @@ body{
 .gSuggest::-webkit-scrollbar-thumb {
 	background-color: rgba(0,0,0,12%);
 }
-.gSuggestSend{
-	width: 64px;
-	height: 32px;
+.btn{
+	display: inline-block;
 	background-color: #0ED17F;
 	font-size: 14px;
 	text-align: center;
 	line-height: 32px;
+	padding: 0 20px 0 20px ;
 	color: #FFFFFF;
 	border-radius: 2px;
 	border: solid 1px rgba(0,0,0,0.05);
 	box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+.btn:hover{
+	background-color: #0AC376;
 	transition: background-color .3s;
 }
-.gSuggestSend:hover{
-	background-color: #0AC376;
+.btn:active{
+	transform: scale(0.9);
+	transition: all .1s;
 }
 footer{
 	padding: 16px;
