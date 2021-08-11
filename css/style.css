@@ -7,6 +7,11 @@
 body{
 	background-color: #f6f6f6;
 }
+/*滚轮轨道相关*/
+body::-webkit-scrollbar {
+	width: 0;
+}
+
 .gBody{
 	width: 600px;
 	min-width: 340px;
