@@ -3,6 +3,7 @@
 	padding: 0;
 	text-decoration: none;
 	list-style: none;
+	outline: none;
 }
 :root {
 	--GreenColor: #0ED17F;
@@ -21,11 +22,12 @@ body,html{
 	height: 100%;
 	margin: 0 auto;
 	position: relative;
+	background: #FFFFFF;
 }
 .firstPage{
 	position: absolute;
 	top: 0;
-	background-color: #FFFFFF;
+	background: #FFFFFF;
 }
 .gSelf{
 	margin: 8px;
@@ -196,6 +198,13 @@ body,html{
 	border-radius: 2px;
 	border: solid 1px rgba(0,0,0,0.05);
 	box-shadow: 0 0 2px rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+.btn2{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	margin: 24px 8px 8px 8px;
 }
 .btn:hover{
 	background-color: #0AC376;
@@ -223,5 +232,73 @@ footer{
 	height: 800px;
 	margin: 0 auto;
 	border: none;
-	background-color: #0AC376;
+	background: #FFFFFF;
+}
+.secondPage_head{
+	margin: 8px;
+	height: 48px;
+	border-radius: 4px;
+	background: var(--BlackColor);
+	position: relative;
+	z-index: 100;
+	top: -56px;
+}
+.left_btn{
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	margin: 8px;
+	cursor: pointer;
+}
+.left_btn:active{
+	transform: scale(0.9);
+	transition: all .1s;
+}
+.secondPage_head p{
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 48px;
+}
+.input_list{
+	margin-top: 56px;
+}
+.secondPage_input{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin: 8px;
+	margin-bottom: 8px;
+	height: 40px;
+	background-color: #FFFFFF;
+	border-radius: 4px;
+	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
+	padding: 8px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.5);
+}
+.color_input{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: rgba(0,0,0,0.8);
+}
+.secondPage_input input{
+	border: none;
+	text-align: end;
+}
+.secondPage_input input[type="color"]{
+	width: 16px;
+	height: 16px;
+}
+.secondPage_input input[type="color"]:active{
+	transform: scale(0.9);
+	transition: all .1s;
+}
+.secondPage_input input[type="text"]{
+	height: 100%;
+}
+.secondPage_input input[type="date"]{
+	height: 100%;
+	
 }
