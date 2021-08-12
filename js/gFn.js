@@ -6,6 +6,7 @@ window.addEventListener("load",function(){
 	//第二页位置大小设置
 	secondPage.style.top = - firstPage.offsetHeight + "px";
 	secondPage.style.minHeight = firstPage.offsetHeight - 8 + "px";
+	document.querySelector(".secondPage_head").style.width = firstPage.offsetWidth - 16 + "px";
 	//个人信息
 	document.querySelector("#personal_information").addEventListener("click",function(){
 		gIframe("personal_information.html","个人信息");
@@ -26,7 +27,9 @@ window.addEventListener("load",function(){
 	document.querySelector("#about").addEventListener("click",function(){
 		gIframe("about.html","关于我们");
 	})
+	//关闭ifram
 	leftBtn.addEventListener("click",function(){
+		secondPage.src = "";
 		myAnimate(".secondPage", - firstPage.offsetHeight + "px", "top", "top .3s");
 		myAnimate(".secondPage_head", "-56px", "top", "top .4s");
 	})

@@ -246,18 +246,26 @@ footer{
 	background: #FFFFFF;
 }
 .secondPage_head{
-	margin: 8px;
-	height: 48px;
-	border-radius: 4px;
-	background: var(--BlackColor);
-	position: relative;
+	background: #FFFFFF;
+	position: fixed;
+	padding: 8px;
+	padding-bottom: 7px;
 	z-index: 100;
-	top: -56px;
+	top: -64px;
+}
+.page_name{
+	background: var(--BlackColor);
+	border-radius: 4px;
 }
 .secondPage_head2{
 	margin: 0 0 16px 8px;
 	font-size: 16px;
 	font-weight: 600;
+}
+.secondPage_head p{
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 48px;
 }
 .left_btn{
 	position: absolute;
@@ -281,16 +289,12 @@ footer{
 	transform: scale(0.9);
 	transition: all .1s;
 }
-.secondPage_head p{
-	color: #FFFFFF;
-	text-align: center;
-	line-height: 48px;
-}
+
 .input_list,.msg_list{
-	margin-top: 56px;
+	margin-top: 64px;
 }
 .secondPage_update{
-	padding-top: 56px;
+	padding-top: 64px;
 	margin: 8px;
 	display: flex;
 	flex-direction: row;
@@ -420,7 +424,7 @@ footer{
 .about_box{
 	background: #F6F6F6;
 	margin: 8px;
-	margin-top: 56px;
+	margin-top: 64px;
 	padding: 8px;
 	border-radius: 4px;
 	box-shadow: var(--boxShadow);
@@ -442,7 +446,7 @@ footer{
 }
 .loginForm input,.loginForm select{
 	width: 100%;
-	height: 40px;
+	height: 48px;
 	margin-bottom: 16px;
 	border: none;
 	border-bottom: solid 1px rgba(0,0,0,0.1);
