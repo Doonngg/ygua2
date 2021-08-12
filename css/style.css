@@ -295,7 +295,9 @@ footer{
 }
 .secondPage_update{
 	margin: 8px;
-	margin-bottom: 32px;
+	padding: 8px;
+	border-radius: 4px;
+	box-shadow: var(--boxShadow);
 }
 .update_body{
 	margin-top: 64px;
@@ -360,7 +362,8 @@ footer{
 	box-shadow: var(--boxShadow);
 }
 .secondPage_msg_list p{
-	font-size: 15px;
+	font-size: 16px;
+	font-weight: 600;
 	color: rgba(0,0,0,0.8);
 }
 .msg_list_top{
