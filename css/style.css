@@ -62,7 +62,7 @@ body,html{
 }
 .gcolor div:nth-child(2){
 	font-size: 14px;
-	color: var(--Black5);
+	color: rgba(255,255,255,0.5);
 	margin-left: 4px;
 }
 .gSelfRight{
@@ -83,9 +83,18 @@ body,html{
 	transform: scale(0.9);
 	transition: all .1s;
 }
-.gSelfRight img{
+.self_level,.self_information,.self_logout{
 	width: 36px;
 	height: 36px;
+}
+.self_logout{
+	background: url(../img/icon1.svg);
+}
+.self_information{
+	background: url(../img/icon3.svg);
+}
+.self_level{
+	background: url(../img/icon2.svg);
 }
 .gList{
 	display: block;
