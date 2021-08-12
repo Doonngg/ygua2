@@ -269,6 +269,46 @@ footer{
 .input_list{
 	margin-top: 56px;
 }
+.secondPage_update{
+	padding-top: 56px;
+	margin: 8px;
+	display: flex;
+	flex-direction: row;
+}
+.secondPage_update p{
+	font-size: 15px;
+	font-weight: 600;
+	color: rgba(0,0,0,0.5);
+	margin-right: 16px;
+}
+.update_content{
+	font-size: 15px;
+	color: rgba(0,0,0,0.7);
+}
+.update_content li{
+	margin-left: 16px;
+	line-height: 24px;
+	position: relative;
+}
+.update_content li::before{
+	content: "";
+	width: 6px;
+	height: 6px;
+	background: #0ED17F;
+	border-radius: 50%;
+	position: absolute;
+	top: 8px;
+	left: -16px;
+}
+.update_content li:nth-child(1){
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 8px;
+	margin-left: 0;
+}
+.update_content li:nth-child(1)::before{
+	display: none;
+}
 .secondPage_input{
 	display: flex;
 	flex-direction: row;

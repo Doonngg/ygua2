@@ -14,6 +14,10 @@ window.addEventListener("load",function(){
 	document.querySelector("#change_password").addEventListener("click",function(){
 		gIframe("change_password.html","修改密码");
 	})
+	//更新记录
+	document.querySelector("#update_record").addEventListener("click",function(){
+		gIframe("update_record.html","更新记录");
+	})
 	leftBtn.addEventListener("click",function(){
 		myAnimate(".secondPage", - firstPage.offsetHeight + "px", "top", "top .3s");
 		myAnimate(".secondPage_head", "-56px", "top", "top .4s");
