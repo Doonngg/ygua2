@@ -1,10 +1,12 @@
+//页面通讯
+	let receive = window.opener["filter"];
+	console.log(receive);
 window.addEventListener("load",function(){
 	let firstPage = document.querySelector(".firstPage");
 	let secondPage = document.querySelector(".secondPage");
 	let gSelf = document.querySelector(".gSelf");
 	let leftBtn = document.querySelector(".left_btn");
-	let receive = window.opener["filter"];
-	console.log(receive);
+	
 	//第二页位置大小设置
 	secondPage.style.top = - firstPage.offsetHeight + "px";
 	secondPage.style.minHeight = firstPage.offsetHeight - 8 + "px";
