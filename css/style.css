@@ -86,6 +86,7 @@ body,html{
 	height: 36px;
 }
 .gList{
+	display: block;
 	margin: 8px;
 	padding: 16px;
 	background-color: #FFFFFF;
@@ -243,11 +244,17 @@ footer{
 	z-index: 100;
 	top: -56px;
 }
+.secondPage_head2{
+	margin: 0 0 16px 8px;
+	font-size: 16px;
+	font-weight: 600;
+}
 .left_btn{
 	position: absolute;
 	width: 32px;
 	height: 32px;
 	margin: 8px;
+	background: url(../img/left_icon.svg)no-repeat;
 	cursor: pointer;
 }
 .left_btn:active{
@@ -275,17 +282,23 @@ footer{
 	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
 	padding: 8px;
 	font-size: 14px;
-	color: rgba(0,0,0,0.5);
+	color: rgba(0,0,0,0.8);
 }
 .color_input{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	color: rgba(0,0,0,0.8);
+}
+.color_input p{
+	font-size: 14px;
+	color: rgba(0,0,0,0.5);
 }
 .secondPage_input input{
 	border: none;
 	text-align: end;
+	background: none;
+	font-size: 14px;
+	color: rgba(0,0,0,0.5);
 }
 .secondPage_input input[type="color"]{
 	width: 16px;
@@ -301,4 +314,7 @@ footer{
 .secondPage_input input[type="date"]{
 	height: 100%;
 	
+}
+.secondPage_input input[type="button"]{
+	background: #F6F6F6;
 }
