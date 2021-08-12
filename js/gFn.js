@@ -1,6 +1,3 @@
-//页面通讯
-	let receive = window.opener["filter"];
-	console.log(receive);
 window.addEventListener("load",function(){
 	let firstPage = document.querySelector(".firstPage");
 	let secondPage = document.querySelector(".secondPage");
