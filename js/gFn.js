@@ -6,7 +6,7 @@ window.addEventListener("load",function(){
 	
 	//第二页位置大小设置
 	secondPage.style.top = - firstPage.offsetHeight + "px";
-	secondPage.style.minHeight = firstPage.offsetHeight - 8 + "px";
+	secondPage.style.width = firstPage.offsetWidth + "px";
 	document.querySelector(".secondPage_head").style.width = firstPage.offsetWidth - 16 + "px";
 	//个人信息
 	document.querySelector("#personal_information").addEventListener("click",function(){
