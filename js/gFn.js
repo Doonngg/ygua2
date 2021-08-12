@@ -5,7 +5,7 @@ window.addEventListener("load",function(){
 	let leftBtn = document.querySelector(".left_btn");
 	//第二页位置大小设置
 	secondPage.style.top = - firstPage.offsetHeight + "px";
-	secondPage.style.height = firstPage.offsetHeight + "px";
+	secondPage.style.minHeight = firstPage.offsetHeight - 8 + "px";
 	//个人信息
 	document.querySelector("#personal_information").addEventListener("click",function(){
 		gIframe("personal_information.html","个人信息");
@@ -19,8 +19,8 @@ window.addEventListener("load",function(){
 		gIframe("update_record.html","更新记录");
 	})
 	//留言管理
-	document.querySelector("#msh_supervise").addEventListener("click",function(){
-		gIframe("msh_supervise.html","留言管理");
+	document.querySelector("#msg_supervise").addEventListener("click",function(){
+		gIframe("msg_supervise.html","留言管理");
 	})
 	//关于我们
 	document.querySelector("#about").addEventListener("click",function(){
