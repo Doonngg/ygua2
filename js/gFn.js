@@ -2,7 +2,7 @@ window.addEventListener("load",function(){
 	let firstPage = document.querySelector(".firstPage");
 	let secondPage = document.querySelector(".secondPage");
 	let gSelf = document.querySelector(".gSelf");
-	let leftBtn = document.querySelector(".left_btn");
+	let leftBack = document.querySelector(".leftBack");
 	
 	//第二页位置大小设置
 	secondPage.style.top = - firstPage.offsetHeight + "px";
@@ -29,7 +29,7 @@ window.addEventListener("load",function(){
 		gIframe("about.html","关于我们");
 	})
 	//关闭ifram
-	leftBtn.addEventListener("click",function(){
+	leftBack.addEventListener("click",function(){
 		secondPage.src = "";
 		myAnimate(".secondPage", - firstPage.offsetHeight + "px", "top", "top .3s");
 		myAnimate(".secondPage_head", "-56px", "top", "top .4s");

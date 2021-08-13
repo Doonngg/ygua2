@@ -119,7 +119,7 @@ body,html{
 	font-size: 20px;
 	color: #18191F;
 }
-.leftOpen {
+.rightOpen {
 	border: solid;
 	border-width: 0 1px 1px 0;
 	display: inline-block;
@@ -127,7 +127,6 @@ body,html{
 	border-color: var(--Black5);
 	transform: rotate(-45deg);
 	margin-right: 8px;
-	transition: transform .3s;
 }
 .gDownload{
 	display: flex;
@@ -268,23 +267,57 @@ footer{
 	text-align: center;
 	line-height: 48px;
 }
-.left_btn{
+.leftBack{
 	position: absolute;
 	width: 32px;
 	height: 32px;
 	margin: 8px;
-	background: url(../img/left_icon.svg)no-repeat;
+	background: rgba(255,255,255,.2);
+	border-radius: 50%;
 	cursor: pointer;
 }
-.left_btn:active{
+.leftBack::after{
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 13px;
+	border: solid;
+	border-width: 0 1px 1px 0;
+	display: inline-block;
+	padding: 4px;
+	border-color: #FFFFFF;
+	transform: rotate(135deg);
+}
+.leftBack:active{
 	transform: scale(0.9);
 	transition: all .1s;
 }
 .close_btn{
+	position: relative;
 	width: 32px;
 	height: 32px;
-	background: url(../img/close_icon.svg)no-repeat;
+	background: var(--BlackColor);
+	border-radius: 50%;
 	cursor: pointer;
+}
+.close_btn::before,.close_btn::after{
+	content: "";
+	position: absolute;
+	top: 12px;
+	border: solid;
+	border-width: 0 1px 1px 0;
+	display: inline-block;
+	padding: 4px;
+	border-color: #FFFFFF;
+	
+}
+.close_btn::before{
+	transform: rotate(135deg);
+	left: 18px;
+}
+.close_btn::after{
+	transform: rotate(-45deg);
+	left: 7px;
 }
 .close_btn:active{
 	transform: scale(0.9);
