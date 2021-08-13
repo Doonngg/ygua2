@@ -293,30 +293,10 @@ footer{
 	transition: all .1s;
 }
 .close_btn{
-	position: relative;
-	width: 30px;
-	height: 30px;
-	background: var(--BlackColor);
-	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+	background: url(../img/close_icon.svg)no-repeat;
 	cursor: pointer;
-}
-.close_btn::before,.close_btn::after{
-	content: "";
-	position: absolute;
-	top: 12px;
-	border: solid;
-	border-width: 0 1px 1px 0;
-	display: inline-block;
-	padding: 3px;
-	border-color: #FFFFFF;
-}
-.close_btn::before{
-	transform: rotate(135deg);
-	left: 17px;
-}
-.close_btn::after{
-	transform: rotate(-45deg);
-	left: 7px;
 }
 .close_btn:active{
 	transform: scale(0.9);
